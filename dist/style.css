@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200");
+* {
+  box-sizing: border-boz;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+*:root {
+  background-color: #2196f3;
+}
+* .container {
+  margin: 1rem auto;
+}
+* .container .ListaCidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+* .container .ListaCidades::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+* .container .ListaCidades .card {
+  background-color: #fff;
+  box-shadow: 1px 3px 6px 0 rgba(0,0,0,0.13);
+  border-radius: 8px;
+  margin: 0 5px;
+  min-height: 30vh;
+}
+* .container .ListaCidades .card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+* .container .ListaCidades .card h3 {
+  font-size: 1rem;
+}
+* .container .ListaCidades .card p {
+  font-size: 0.98rem;
+}
+* .container .ListaCidades .card .CardHeader {
+  color: #fff;
+}
+* .container .ListaCidades .card .CardHeader .ContainerPerfil {
+  position: relative;
+}
+* .container .ListaCidades .card .CardHeader .ContainerPerfil .Perfil {
+  height: 30vh;
+  width: 100%;
+  z-index: -1;
+}
+* .container .ListaCidades .card .CardHeader .Overlay {
+  background-color: rgba(28,36,70,0.44);
+  min-height: 30vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+* .container .ListaCidades .card .CardHeader .Overlay .ContainerHeader {
+  padding: 2rem 1.2rem;
+}
+@media (min-width: 700px) {
+  * .container .ListaCidades {
+    flex-direction: row;
+  }
+  * .container .ListaCidades .card {
+    width: 33.33%;
+  }
+}
